@@ -59,6 +59,7 @@ menu_items = [
 
     # set newtab to true to make the link open in new tab
     {name = "github", url = "https://github.com/zicklag", newtab = true},
+    {name = "sponsor", url = "https://github.com/sponsors/zicklag", newtab = true},
 ]
 
 # Whether to show links to earlier and later (aka. higher/lower) posts
@@ -68,7 +69,7 @@ enable_post_view_navigation = true
 # The text shown at the bottom of a post,
 # before earlier/later post links.
 # Defaults to "Thanks for reading! Read other posts?"
-post_view_navigation_prompt = """Thanks for reading! If you want to support my work, you can <a href="https://github.com/sponsors/zicklag">sponsor me</a> on <a href="https://github.com/zicklag">GitHub</a>"""
+post_view_navigation_prompt = "Thanks for reading!"
 
 # Use full Hack character set, not just a subset.
 # Switch this to true if you need full unicode support.

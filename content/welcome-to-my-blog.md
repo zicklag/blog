@@ -1,10 +1,6 @@
 ---
 title: Welcome to My Blog!
 date: 2023-03-15 09:51:00
-
-taxonomies:
-    tags:
-        - blog
 ---
 
 Hello everybody and welcome to my blog!
