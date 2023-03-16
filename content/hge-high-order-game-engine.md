@@ -1,11 +1,11 @@
 ---
-title: HOE - High Order Game Engine
+title: HGE - High Order Game Engine
 date: 2023-03-15 18:07:00
 
 taxonomies:
   tags:
     - HVM
-    - HOE
+    - HGE
 ---
 
 In the [last post](@/hvm-what-is-functional-programming.md) I eluded towards making a game engine, utilizing functional programming and the new [HVM] runtime.
@@ -91,15 +91,15 @@ Option 3 is interesting, though. HVM code isn't _really_ designed to be written 
 
 That kind of leads to a fourth option, which is a combination of options 2 and 3: we write a simple language on top of HVM that is a little nicer, but not complicated so it will be easy to make the compiler. That's what I think I'm going to try.
 
-[Kind]: https://github.com/HigherOrderCO/Kind
+[kind]: https://github.com/HigherOrderCO/Kind
 
 ## Conclusion
 
 HVM seems to solve a lot of the important big issues for writing a game with the goals that I've outlined. It is extremely new and relatively untested, but seems to have enormous potential for the future.
 
-As an exercise, then, I'm going to try to throw together, as fast as possible, a prototype game engine, built with the lessons I've learned so far working on Jumpy and Bones, but on top of HVM and using functional programming techniques. As a working name for the engine, I'll go with HOE for High Order ( game ) Engine.
+As an exercise, then, I'm going to try to throw together, as fast as possible, a prototype game engine, built with the lessons I've learned so far working on Jumpy and Bones, but on top of HVM and using functional programming techniques. As a working name for the engine, I'll go with HGE for High order Game Engine.
 
-As kind of a side quest, I'm going to be working on a simple HVM pre-processor/compiler, that can make raw HVM a little nicer to use, and will be useful for writing HOE. This little language I'm calling HOP, for High-Order Plus, and I'm going to write the HOP compiler in raw HVM to help learn how to use both it, and functional programming techniques.
+As kind of a side quest, I'm going to be working on a simple HVM pre-processor/compiler, that can make raw HVM a little nicer to use, and will be useful for writing HGE. This little language I'm calling HOP, for High-Order Plus, and I'm going to write the HOP compiler in raw HVM to help learn how to use both it, and functional programming techniques.
 
 I've already got a simple HOP compiler that works by replacing `#include` statements with included file contents so you can spread your HVM program across multiple files. In my next post I'll write about what that looks like so far. It's my first functional program and I'll write a little bit about how it's feeling to write for the first time and how it compares to the imperative programming I'm used to.
 
