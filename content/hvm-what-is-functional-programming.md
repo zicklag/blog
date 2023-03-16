@@ -4,8 +4,8 @@ date: 2023-03-15 14:18:00
 
 taxonomies:
     tags:
-        - hvm
-        - functional-programming
+        - HVM
+        - Functional Programming
 ---
 
 [HVM], the High Order Virtual Machine, is a new, blazing fast runtime for functional programming languages that seems to have some pretty incredible potential for the future.
@@ -18,7 +18,7 @@ Their [homepage][HVM] sums it up pretty well, but I'll go over some major points
 
 - **Insanely fast:** Despite being extremely new, the radically new architecture for computation makes it faster than even mature compilers in some cases. With proper time and investment, it's performance potential could be enormous, and _might_ ( big might ) compare with Rust eventually.
 
-- **Written in [Rust] 🦀: Always a great bonus for me, as it means I can contribute!
+- **Written in [Rust] 🦀**: Always a great bonus for me, as it means I can contribute!
 
 If you want more details on how it works and where it's at, check out the [FAQ] on the HVM homepage, it gives a great overview.
 
