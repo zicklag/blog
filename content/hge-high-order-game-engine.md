@@ -18,7 +18,7 @@ The first thing I want to talk about is _why_ HVM seems like a great platform to
 
 Maybe a better question is "Why HVM when you already have Rust?" 😜
 
-Rust is amazing, and, so far, my favorite programming language. It gives you great control over the hardware, which is great for making performance critical applications ( such as games ). And it's approachable to beginners, with a clean separation between safe and `unsafe` Rust.
+Rust is amazing, and, so far, my favorite programming language. It gives you great control over the hardware, which is great for making performance critical applications ( such as games ). And its approachable to beginners, with a clean separation between safe and `unsafe` Rust.
 
 It's just great, so why change? Especially when I'm already writing a game ( [Fish Folk: Jumpy](https://github.com/fishfolk/jumpy) ) and future game platform ( [Bones] ) in Rust.
 
@@ -67,7 +67,7 @@ If we look at using HVM, it has many of the same advantages of Bones + WASM:
   - **WASM:** Unfortunately there's no WASM linking standard, other than Emscripten, which isn't necessarily supported by non-emscripten build tools, which is unfortunate. There is effort on a WASM linking standard, but it isn't finished yet. It's an area of investigation whether we can make WASM linking work for us.
   - **HVM:** There's no HVM linking standard yet either! But this is a weird case because there's hardly one language compiling to HVM anyway. This means we might just be able to roll our own, since we'll need to forge the ecosystem a bit anyway.
 
-So HVM actually satisfies some of my biggest goals for game development, including it's ( alleged ) performance.
+So HVM actually satisfies some of my biggest goals for game development, including its ( alleged ) performance.
 
 And on the performance note, Bones hasn't been made multi-threaded. That was left out for simplicity in design and for determinism's sake, we might be able to enable it later. The crazy thing about HVM is that you get _automatic_ parallelism **while still maintaining determinism!**
 

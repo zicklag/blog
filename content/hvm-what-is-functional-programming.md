@@ -16,7 +16,7 @@ Their [homepage][HVM] sums it up pretty well, but I'll go over some major points
 
 - **Automatically parallel:** Programs are automatically run across multiple threads as much as possible, _without_ mutexes, RW locks, or atomic ref counts!
 
-- **Insanely fast:** Despite being extremely new, the radically new architecture for computation makes it faster than even mature compilers in some cases. With proper time and investment, it's performance potential could be enormous, and _might_ ( big might ) compare with Rust eventually.
+- **Insanely fast:** Despite being extremely new, the radically new architecture for computation makes it faster than even mature compilers in some cases. With proper time and investment, its performance potential could be enormous, and _might_ ( big might ) compare with Rust eventually.
 
 - **Written in [Rust] 🦀**: Always a great bonus for me, as it means I can contribute!
 
@@ -56,7 +56,7 @@ Functional languages on the other hand, are more declarative. They tell the comp
 
 That's pretty vague, so maybe a better analogy is a math problem. In a functional language you use statements that say things like:
 
-> "The `Head` of a `List` what you get if you take the first item off the top of the list."
+> "The `Head` of a `List` is what you get if you take the first item off the top of the list."
 >
 > "The concatenation of two strings is what you get when you take all the letters of the first string, followed by all the letters of the second string."
 
@@ -69,11 +69,11 @@ There are some other important properties of most functional programming languag
 
 One cool part about the functional paradigm is that, when combined with the HVM execution model, different parts of your equation can be evaluated in parallel, because it knows when the variables from one part of the program are independent from another part and can be evaluated at the same time without effecting the result.
 
-Because each function is dependent only on it's inputs, there's not a big, mutable state, which can really help cut down on bugs and unpredictability. And there's no need for mutexes or ref counting or, in the case of HVM, garbage collection.
+Because each function is dependent only on its inputs, there's not a big, mutable state, which can really help cut down on bugs and unpredictability. And there's no need for mutexes or ref counting or, in the case of HVM, garbage collection.
 
 ## Is Functional Programming Better?
 
-First off, a disclaimer, **I'm not really trying to find out which one is better!** Everybody has their own preferences, and everything has it's pros and cons. What I really want to know is: "Are there compelling reasons to use a functional programming language for writing some of _my_ software?"
+First off, a disclaimer, **I'm not really trying to find out which one is better!** Everybody has their own preferences, and everything has its pros and cons. What I really want to know is: "Are there compelling reasons to use a functional programming language for writing some of _my_ software?"
 
 The thing about functional programming languages is that they don't natively map well do our processors and memory, which inherently are like big state machines. So part of the reason they haven't caught on is because they aren't always as efficient to run. Substitutions don't map to clearly determined, time bounded instructions.
 
