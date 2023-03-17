@@ -19,7 +19,7 @@ You can represent so may different ideas, even quite ergonomically, just with th
 
 ### If Statements
 
-With the power of substitutions you can make if-else statements:
+You can make if-else statements:
 
 ```dart
 (If 1 a b) = a
@@ -64,9 +64,9 @@ Other things I implemented quickly for HOP were:
 
 ## Final Thoughts
 
-All of these things are things I would normally pull from Rust's standard library, but they were trivial to implement with just one or two lines each for HVM. I'm really intrigued by how simple all of it can be, such that I'm comfortable just writing common functions that I use all the time in Rust, without a lot of work.
+All of these things are things I would normally pull from Rust's standard library, but they were trivial to implement with just one or two lines each for HVM. I'm really intrigued by how simple all of it can be.
 
-I mean, the `Vec` implementation in Rust is a very complicated thing, but in HVM, I can just make lists out of thin air, and operations on those lists, with substitution alone.
+I mean, the `Vec` implementation in Rust is a very complicated thing, but in HVM, I can just make lists out of thin air, and then implement operations on those lists easily.
 
 It just feels like a very elegant and powerful form of programming.
 
