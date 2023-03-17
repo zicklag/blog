@@ -139,7 +139,7 @@ This is where we reach an interesting concept: HVM has no standard library for u
 
 So how do we implement `String.append`?
 
-We want the `Sttring.append` function to take two arguments:
+We want the `String.append` function to take two arguments:
 
 - The string to start with
 - A character to append to the string.
