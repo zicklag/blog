@@ -96,7 +96,7 @@ Well, you can write an if statement with a couple substitutions rules.
 (If False a b) = b
 ```
 
-This says, “If you find an `If` function call on a `True` value and two arguments, return the first argument, but if you call it on a `False` value, return the second argument”.
+This says, “If you find an `If` function call on a `True` value and two arguments, return the first argument, but if you call it on a `False` value, return the second argument”. This gives us the functionality of an if-else statement.
 
 Notice that we can do this with substitutions alone, no new language features necessary!
 
