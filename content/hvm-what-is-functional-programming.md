@@ -89,6 +89,44 @@ Maybe I'm over glorifying it in my head because I haven't barely used it yet, an
 
 It can be hard to imagine how you might use equations to actually _write_ a program, if you are only used to imperative programming. How do you write a program with equations?
 
+Well, you can write an if statement with a couple substitutions rules.
+
+```dart
+(If True a b) = a
+(If False a b) = b
+```
+
+This says, “If you find an `If` function call on a `True` value and two arguments, return the first argument, but if you call it on a `False` value, return the second argument”.
+
+Notice that we can do this with substitutions alone, no new language features necessary!
+
+We can do boolean operations easily, too:
+
+```dart
+(Not True) = False
+(Not False) = True
+(And True True) = True
+(And a b) = False
+// And so on.
+```
+
+Combining this, we might do things like this:
+
+```dart
+(Greet name likes_chocolate likes_brownies) =
+    let name_greeting = (String.concat "Hello, " name)
+    let likes_greeting = (If
+      (And likes_chocolate (Not likes_brownies))
+      "You like chocolate but now brownies!?"
+      "I like those, too!"
+    )
+    (String.concat name_greeting likes_greeting)
+```
+
+> **Note:** Here I'm writing _raw_ HVM code, which you aren't usually supposed to write by hand. Raw HVM is supposed to be a compiler target, similar to assembly, but for now, for learning purposes, I'm going to write it directly, and eventually try to write a small compiler so that I don't have to write it out by hand.
+
+But what does a full program look like?
+
 That's what I need to find out by writing some real code.
 
 So what should I write to take advantage of HVM's performance, and try out functional programming in general? I'm thinking a game engine... 😉
