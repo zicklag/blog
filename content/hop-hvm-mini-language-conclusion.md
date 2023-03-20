@@ -19,7 +19,7 @@ Despite the very simple programming that I used to make the HOP compiler, it's a
 
 Without having to worry about queues, channels, locks or anything like that, I was able to focus on the core logic for my program, and get a very performant implementation.
 
-So far, that seems to be one of the biggest advantages of the programming model: being able to focus on your app's logic, without worrying about memory management, **and** without having to worry about slow garbage collection slowing your app down when it needs to finally face the world.
+So far, that seems to be one of the biggest advantages of the programming model: being able to focus on your app's logic, without worrying about memory management, **and** without having to worry about garbage collection slowing your app down when it needs to finally face the world.
 
 ## Substitutions Are Powerful
 
