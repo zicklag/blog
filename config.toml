@@ -2,6 +2,8 @@
 base_url = "https://zicklag.github.io/blog"
 theme = "terminimal"
 
+title = "@Zicklag's Blog"
+
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
