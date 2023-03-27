@@ -1,6 +1,6 @@
 ---
 title: Interaction Nets, Combinators, and Calculus
-date: 2023-03-24 18:00:00
+date: 2023-03-26 21:20:00
 
 taxonomies:
   tags:
