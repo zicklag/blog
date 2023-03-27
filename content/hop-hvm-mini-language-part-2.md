@@ -11,6 +11,8 @@ taxonomies:
 
 In my [previous post](@/hop-hvm-mini-language-part-1.md), I walked through the basics of an HVM program that could read and write files. Now we're going to make a compiler!
 
+<!-- more -->
+
 > **Note:** Unfortunately I ran out of time to walk through the whole compiler, so this goes over how we get started.
 
 ## Goal Functionality

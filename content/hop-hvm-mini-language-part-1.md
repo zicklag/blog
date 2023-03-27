@@ -15,6 +15,8 @@ For now, I'm calling that language HOP for High Order Plus.
 
 This turned more into a basic HVM tutorial than I initially thought so I figure I'll make this a 2 part post, with the first one going through HVM basics such as printing and loading files, and the next post going over the compiler designing aspect.
 
+<!-- more -->
+
 So let's get started!
 
 [hvm]: https://github.com/HigherOrderCO/HVM

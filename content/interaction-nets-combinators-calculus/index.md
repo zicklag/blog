@@ -17,6 +17,8 @@ But what what _is_ HVM built on? From the readme we hear about things such as _I
 
 In this post, I'm going to cover some of the important concepts at a medium-high level. I'm going just deep enough to see how some of the theoretical pieces fit together, while trying to avoid getting bogged down with too many details.
 
+<!-- more -->
+
 Let's get started!
 
 [discuss]: https://github.com/zicklag/blog/discussions/new?category=general

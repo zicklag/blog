@@ -12,6 +12,8 @@ In the [last post](@/hvm-what-is-functional-programming.md) I eluded towards mak
 
 The first thing I want to talk about is _why_ HVM seems like a great platform to build a game engine on.
 
+<!-- more -->
+
 [hvm]: https://github.com/HigherOrderCO/HVM
 
 ## Why HVM?

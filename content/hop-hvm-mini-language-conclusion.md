@@ -11,6 +11,8 @@ taxonomies:
 
 In my [previous post](@/hop-hvm-mini-language-part-2.md), I walked through the first steps of making a simple compiler with [HVM]. Now I cover some final thoughts and conclusions.
 
+<!-- more -->
+
 [HVM]: https://github.com/HigherOrderCO/HVM
 
 ## Automatic Multi-threading is Awesome

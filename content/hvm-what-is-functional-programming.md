@@ -20,6 +20,8 @@ Their [homepage][HVM] sums it up pretty well, but I'll go over some major points
 
 - **Written in [Rust] 🦀**: Always a great bonus for me, as it means I can contribute!
 
+<!-- more -->
+
 If you want more details on how it works and where it's at, check out the [FAQ] on the HVM homepage, it gives a great overview.
 
 [Rust]: https://rust-lang.org
