@@ -1,4 +1,4 @@
-<a href="{{ path }}" style="">
-    <img alt="{{ alt | default(value=path) }}" src="{{ path }}"
+<a href="{{ page.colocated_path }}/{{ path }}" style="">
+    <img alt="{{ alt | default(value=path) }}" src="{{ page.colocated_path }}{{ path }}"
         style="width: {{ width | default(value="90%") }}; {% if max_width %}max-width: {{ max_width }};{% endif %} margin: auto;" />
 </a>
