@@ -84,7 +84,7 @@ To simplify our graphs, we're going to constructors and duplicators a little dif
 
 {{ image(alt="Duplicator and Constructor Nodes", path="./duplicator-constructor.excalidraw.png", max_width="450px") }}
 
-Both constructors and duplicators have one active port, and two secondary ports.
+We use the greek delta symbol, δ, for duplicators, and the greek gamma symbol, γ, for constructors. Both constructors and duplicators have one active port, and two secondary ports.
 
 ### Combinator Rules
 
@@ -178,7 +178,7 @@ We can quite simply represent lambdas and lambda applications with interaction c
 
 For instance, if we want to represent the simple lambda `λx.x`, which just returns it's argument, we would do that with an interaction net like this:
 
-{{ image(alt="λx.x as an Interaction Combinator", path="./lam-x-x.excalidraw.png", max_width="240px") }}
+{{ image(alt="λx.x as an Interaction Combinator", path="./lam-x-x.excalidraw.png", max_width="270px") }}
 
 Notice how the argument port of the lambda, is connected to the body port of the lambda in a loop, as representative of the lambda taking it's argument, and using it as it's body.
 
@@ -188,7 +188,7 @@ Here's another example for `λx.xx`.
 
 This is a lot more complicated, so let's try to break it down. We can see that this expression is made up of one lambda node, one duplicator node, and one lambda application node.
 
-{{ image(alt="λx.xx as an Interaction Combinator Annotated", path="./lam-x-xx-annotated.excalidraw.png", max_width="535px") }}
+{{ image(alt="λx.xx as an Interaction Combinator Annotated", path="./lam-x-xx-annotated.excalidraw.png", max_width="650px") }}
 
 If you follow it slowly you can see how this net does exactly what lambda expression does: it is a lambda, where the argument is taken, duplicated, and then applied to itself, before being returned as the body of the lambda.
 
