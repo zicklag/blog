@@ -40,7 +40,7 @@ An interaction net is made up of an undirected graph of labeled nodes, along wit
 
 ### Interaction Nodes
 
-Each node in the grpah must have one active port, and zero or more secondary ports. For instance, some nodes that we might use to make up a Cons list would be:
+Each node in the graph must have one active port, and zero or more secondary ports. For instance, some nodes that we might use to make up a Cons list would be:
 
 {{ image(alt="Append, Cons, and Nil Nodes", path="./nodes.excalidraw.png", max_width="400px") }}
 
