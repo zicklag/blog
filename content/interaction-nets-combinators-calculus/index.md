@@ -174,6 +174,13 @@ We can quite simply represent lambdas and lambda applications with interaction c
 
 {{ image(alt="Interaction Combinators As Lambda Calculus Nodes", path="./lambda-nodes.excalidraw.png", max_width="700px") }}
 
+The "Function" and "Output" ports deserve a little bit more explanation.
+
+- If a Lambda node's Output port is connected to the Root, that indicates that the result of the computation is a lambda.
+- If a Lambda node's Output port is connected to the Function port of an Application node, then that indicates lambda application.
+
+Note that you may still connect the Function port of application nodes to different kinds of ports, other than a Lambda Output port. This could happen, for instance, if the return value of another lambda application is also lambda, and you wish to make a lambda application on that returned lambda.
+
 ### Example Expressions
 
 For instance, if we want to represent the simple lambda `λx.x`, which just returns it's argument, we would do that with an interaction net like this:
