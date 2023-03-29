@@ -26,7 +26,7 @@ Let's get started!
 
 ## Interaction Nets
 
-The first thing to understand are **Interacion Nets**. Interaction Nets provide a way of programming that has some useful properties:
+The first thing to understand are **Interaction Nets**. Interaction Nets provide a way of programming that has some useful properties:
 
 - They evaluate deterministically.
 - They are parallel friendly, by not requiring lots of global synchronization.
