@@ -68,9 +68,11 @@ That's the basic idea! There are a few more restrictions and details about the c
 
 Because node substitution rules are only applied on active pairs, it gives us a way to know exactly where to apply substitutions first, and we can potentially do those substitutions on different parts of the graph in parallel, which is awesome.
 
-## Interaction Combinators
+## Symmetric Interaction Combinators
 
-The next important concept is **Interaction Combinators**. Interaction Combinators are specific set of nodes and rules for interaction nets that are in fact _universal_. This means that _any_ interaction net could actually be converted to an interaction net made up only of interaction combinators, and still perform the same computation.
+The next important concept is **Symmetric Interaction Combinators**. Interaction combinators are specific set of nodes and rules for interaction nets that are in fact _universal_. This means that _any_ interaction net could actually be converted to an interaction net made up only of interaction combinators, and still perform the same computation.
+
+_Symmetric_ interaction combinators are a variant of normal interaction combinators that use the same rewrite rules for both of it's node types, as we'll see below.
 
 The beauty of interaction combinators is their simplicity. There are only three kinds of nodes, and only three kinds of substitution rules.
 

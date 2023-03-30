@@ -1,3 +1,6 @@
 {
-    "statusbarerror.wholeLine.show": false
+    "statusbarerror.wholeLine.show": false,
+    "cSpell.words": [
+        "Combinators"
+    ]
 }
