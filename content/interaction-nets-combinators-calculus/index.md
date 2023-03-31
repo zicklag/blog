@@ -82,7 +82,7 @@ The three kinds of interaction combinator nodes are **constructors**, **duplicat
 
 > **Note:** For the sake of the examples below, we don't need to use erasers, so we're going to leave them out for now. In concept, an eraser is a node with only one port that deletes anything that's plugged into it, so it is easy to imagine how it might play into things after we understand constructors and duplicators.
 
-To simplify our graphs, we're going to constructors and duplicators a little different than the nodes in our examples above. They will look like this:
+To simplify our graphs, we're going to display constructors and duplicators a little different than the nodes in our examples above. They will look like this:
 
 {{ image(alt="Duplicator and Constructor Nodes", path="./duplicator-constructor.excalidraw.png", max_width="450px") }}
 
