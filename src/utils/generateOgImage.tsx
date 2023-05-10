@@ -19,7 +19,7 @@ const fetchFonts = async () => {
   return { fontRegular, fontBold };
 };
 
-const { fontRegular, fontBold } = await fetchFonts();
+// const { fontRegular, fontBold } = await fetchFonts();
 
 const ogImage = (text: string) => {
   return (
@@ -115,41 +115,37 @@ const ogImage = (text: string) => {
   );
 };
 
-const options: SatoriOptions = {
-  width: 1200,
-  height: 630,
-  embedFont: true,
-  fonts: [
-    {
-      name: "IBM Plex Mono",
-      data: fontRegular,
-      weight: 400,
-      style: "normal",
-    },
-    {
-      name: "IBM Plex Mono",
-      data: fontBold,
-      weight: 600,
-      style: "normal",
-    },
-  ],
-};
+// const options: SatoriOptions = {
+//   width: 1200,
+//   height: 630,
+//   embedFont: true,
+//   fonts: [
+//     {
+//       name: "IBM Plex Mono",
+//       data: fontRegular,
+//       weight: 400,
+//       style: "normal",
+//     },
+//     {
+//       name: "IBM Plex Mono",
+//       data: fontBold,
+//       weight: 600,
+//       style: "normal",
+//     },
+//   ],
+// };
 
 const generateOgImage = async (mytext = SITE.title) => {
-  const svg = await satori(ogImage(mytext), options);
-
-  // render png in production mode
-  if (import.meta.env.MODE === "production") {
-    const resvg = new Resvg(svg);
-    const pngData = resvg.render();
-    const pngBuffer = pngData.asPng();
-
-    console.info("Output PNG Image  :", `${mytext}.png`);
-
-    await writeFile(`./dist/${mytext}.png`, pngBuffer);
-  }
-
-  return svg;
+  // const svg = await satori(ogImage(mytext), options);
+  // // render png in production mode
+  // if (import.meta.env.MODE === "production") {
+  //   const resvg = new Resvg(svg);
+  //   const pngData = resvg.render();
+  //   const pngBuffer = pngData.asPng();
+  //   console.info("Output PNG Image  :", `${mytext}.png`);
+  //   await writeFile(`./dist/${mytext}.png`, pngBuffer);
+  // }
+  // return svg;
 };
 
 export default generateOgImage;
