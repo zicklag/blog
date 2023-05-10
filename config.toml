@@ -58,6 +58,7 @@ menu_items = [
     {name = "tags", url = "$BASE_URL/tags"},
     {name = "archive", url = "$BASE_URL/archive"},
     {name = "about me", url = "$BASE_URL/about"},
+    # {name = "resume", url = "$BASE_URL/resume"},
 
     # set newtab to true to make the link open in new tab
     {name = "github", url = "https://github.com/zicklag", newtab = true},
