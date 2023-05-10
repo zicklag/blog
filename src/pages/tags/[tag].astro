@@ -44,7 +44,10 @@ const tagPosts = getPostsByTag(posts, tag);
     <ul>
       {
         tagPosts.map(({ data }) => (
-          <Card href={`/posts/${slugify(data)}`} frontmatter={data} />
+          <Card
+            href={`${import.meta.env.BASE_URL}${slugify(data)}`}
+            frontmatter={data}
+          />
         ))
       }
     </ul>

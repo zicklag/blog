@@ -6,17 +6,13 @@ import Footer from "@components/Footer.astro";
 import LinkButton from "@components/LinkButton.astro";
 import Hr from "@components/Hr.astro";
 import Card from "@components/Card";
-import Socials from "@components/Socials.astro";
 import getSortedPosts from "@utils/getSortedPosts";
 import slugify from "@utils/slugify";
-import { SOCIALS } from "@config";
 
 const posts = await getCollection("blog");
 
 const sortedPosts = getSortedPosts(posts);
 const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
-
-const socialCount = SOCIALS.filter(social => social.active).length;
 ---
 
 <Layout>
@@ -30,7 +26,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
             <ul>
               {featuredPosts.map(({ data }) => (
                 <Card
-                  href={`/posts/${slugify(data)}`}
+                  href={`${import.meta.env.BASE_URL}${slugify(data)}`}
                   frontmatter={data}
                   secHeading={false}
                 />
@@ -50,7 +46,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
             ({ data }, index) =>
               index < 4 && (
                 <Card
-                  href={`/posts/${slugify(data)}`}
+                  href={`${import.meta.env.BASE_URL}${slugify(data)}`}
                   frontmatter={data}
                   secHeading={false}
                 />
@@ -59,7 +55,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
         }
       </ul>
       <div class="all-posts-btn-wrapper">
-        <LinkButton href="/posts">
+        <LinkButton href={`${import.meta.env.BASE_URL}posts`}>
           All Posts
           <svg xmlns="http://www.w3.org/2000/svg"
             ><path

@@ -13,7 +13,7 @@ const { name, size = "sm" } = Astro.props;
   }`}
 >
   <a
-    href={`/tags/${name.toLowerCase()}`}
+    href={`${import.meta.env.BASE_URL}tags/${name.toLowerCase()}`}
     class={`${size === "sm" ? "text-sm" : "text-lg"} pr-2 group`}
   >
     <svg
