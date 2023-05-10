@@ -16,6 +16,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@astrojs/mdx": "^0.19.1",
     "@astrojs/rss": "^2.4.1",
     "@resvg/resvg-js": "^2.4.1",
     "astro": "^2.4.4",
@@ -53,7 +54,7 @@
     }
   },
   "lint-staged": {
-    "!(*.{png,jpg,jpeg,webp})": [
+    "!(*.{png,jpg,jpeg,webp,excalidraw})": [
       "prettier --plugin-search-dir=. --write"
     ]
   }

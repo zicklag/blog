@@ -1,0 +1,21 @@
+---
+import { Image, getImage } from "astro:assets";
+
+export interface Props {
+  alt: string;
+  image: ImageMetadata;
+  maxWidth?: number;
+}
+
+const { alt, image, maxWidth } = Astro.props;
+const srcUrl = (await getImage({ src: image })).src;
+---
+
+<a href={srcUrl}>
+  <Image
+    alt={alt}
+    src={image}
+    style={`max-width: ${maxWidth}px`}
+    width={maxWidth}
+  />
+</a>
