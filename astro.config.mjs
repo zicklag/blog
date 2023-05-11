@@ -6,6 +6,7 @@ import remarkCollapse from "remark-collapse";
 import sitemap from "@astrojs/sitemap";
 import mdx from "@astrojs/mdx";
 import { SITE } from "./src/config";
+import fonts from "astro-fonts-next";
 
 // https://astro.build/config
 export default defineConfig({
@@ -15,6 +16,11 @@ export default defineConfig({
     assets: true,
   },
   integrations: [
+    fonts({
+      url: [
+        "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap",
+      ],
+    }),
     mdx(),
     tailwind({
       config: {
