@@ -72,6 +72,18 @@
   .prose a {
     @apply hover:!text-skin-accent;
   }
+  .prose
+    :where(blockquote p:last-of-type):not(
+      :where([class~="not-prose"] *)
+    )::after {
+    content: none !important;
+  }
+  .prose
+    :where(blockquote p:last-of-type):not(
+      :where([class~="not-prose"] *)
+    )::before {
+    content: none !important;
+  }
   .prose thead th:first-child,
   tbody td:first-child,
   tfoot td:first-child {
