@@ -28,7 +28,11 @@ This battle against pride is one I must fight every day, as it rears it's head i
 
 Lies and the pride that it may breed are similarly one of the roots of disrespect. Every time I come into a public space, I come knowing that there are many people here, many of which I probably don't agree with on subjects that I consider important. But I still _respect_ them all. Respect comes from the admission of a truth: we are all people, and in that way, we are all on level ground.
 
-We each have a soul, and therefore, each of us has the ability to make our own decisions. This means we can come to our own conclusions and have our own opinions; it is the irrevocable right of every person to do so, and I believe that our global society could gain much benefit if we had more respect for each-other.
+Every person has a soul, and when I say soul, I mean something very specific. To me, a soul is what gives you your free will. It's what makes us different than robots and computers. Without a soul, we would just be like complicated computers, or like an AI, with no true will of our own. All of our actions would just be based purely off of the chemicals in our brains and how they came together. But because we have a soul, we are individuals with our own choices. Our souls, through our spirits, can influence our physical bodies so that we aren't just an un-feeling consequence of the physical world.
+
+Our souls are what give us the ability to love, because love means nothing without choice. If a robot told you "I love you" because you told it to say that, it wouldn't mean anything. Therefore we must have choice, we must have a soul, to love.
+
+This means we can come to our own conclusions and have our own opinions; it is the irrevocable right of every person to do so, and I believe that our global society could gain much benefit if we had more respect for each-other.
 
 This respect need not come from a position of _liking_ the person your are respecting. You don't have to like somebody, or what they believe in, or what they do, to respect them. You respect that they have a choice and you understand that they are not obligated to think that you are right.
 
