@@ -25,7 +25,19 @@ export default function Card({ href, frontmatter, secHeading = true }: Props) {
           </h3>
         )}
       </a>
-      <Datetime datetime={pubDatetime} />
+      <div className="flex">
+        <Datetime datetime={pubDatetime} /> <span className="ml-4 mr-1">|</span>
+        {frontmatter.tags
+          .map(tag => (
+            <a
+              href={`${import.meta.env.BASE_URL}tags/${tag}`}
+              className="mx-2 underline-offset-4 hover:underline"
+            >
+              #{tag}
+            </a>
+          ))
+          .slice(0, 3)}
+      </div>
       <p>{description}</p>
     </li>
   );
