@@ -1,6 +1,7 @@
 ---
 author: Zicklag
 title: "HOP: HVM Mini Language - Part 1"
+postSlug: hop-hvm-mini-language-part-1
 pubDatetime: 2023-03-16 10:51:00
 description: HVM and functional programming intro, starting with a tiny language parser, part 1.
 
@@ -11,7 +12,7 @@ tags:
   - functional-programming
 ---
 
-In my [previous post](@/hge-high-order-game-engine.md), I talked about why I want to use [HVM] to make a game engine. I decided that, for now, I was going to try to get along writing a thin language on top of raw HVM code, to make it a little bit easier to write and maintain.
+In my [previous post](./hge-high-order-game-engine), I talked about why I want to use [HVM] to make a game engine. I decided that, for now, I was going to try to get along writing a thin language on top of raw HVM code, to make it a little bit easier to write and maintain.
 
 For now, I'm calling that language HOP for High Order Plus.
 

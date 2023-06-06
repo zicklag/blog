@@ -1,6 +1,7 @@
 ---
 author: Zicklag
 title: "HOP: HVM Mini Language - Part 2"
+postSlug: hop-hvm-mini-language-part-2
 pubDatetime: 2023-03-16 20:17:00
 description: HVM and functional programming intro, starting with a tiny language parser, part 2.
 
@@ -11,7 +12,7 @@ tags:
   - functional-programming
 ---
 
-In my [previous post](@/hop-hvm-mini-language-part-1.md), I walked through the basics of an HVM program that could read and write files. Now we're going to make a compiler!
+In my [previous post](./hop-hvm-mini-language-part-1), I walked through the basics of an HVM program that could read and write files. Now we're going to make a compiler!
 
 <!-- more -->
 
@@ -323,4 +324,4 @@ Unfortunately this post already turned out enormous! I wasn't expecting to do su
 
 If you are reading this and you want a finished tutorial, let me know by opening a [discussion](https://github.com/zicklag/blog/discussions/new?category=general).
 
-Finally, let's skip to my [Conclusion so far](@/hop-hvm-mini-language-conclusion.md).
+Finally, let's skip to my [Conclusion so far](./hop-hvm-mini-language-conclusion.md).

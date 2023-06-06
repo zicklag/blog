@@ -1,6 +1,7 @@
 ---
 author: Zicklag
 title: HGE - High Order Game Engine
+postSlug: hge-high-order-game-engine
 description: Thoughts on making a game engine built on top of HVM.
 pubDatetime: 2023-03-15 18:07:00
 tags:
@@ -8,7 +9,7 @@ tags:
   - hge
 ---
 
-In the [last post](@/hvm-what-is-functional-programming.md) I eluded towards making a game engine, utilizing functional programming and the new [HVM] runtime.
+In the [last post](./hvm-what-is-functional-programming) I eluded towards making a game engine, utilizing functional programming and the new [HVM] runtime.
 
 The first thing I want to talk about is _why_ HVM seems like a great platform to build a game engine on.
 

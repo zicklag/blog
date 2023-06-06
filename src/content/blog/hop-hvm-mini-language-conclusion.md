@@ -1,6 +1,7 @@
 ---
 author: Zicklag
 title: "HOP: HVM Mini Language - Conclusion"
+postSlug: hop-hvm-mini-language-conclusion
 pubDatetime: 2023-03-16 22:00:00
 description: Thoughts and conclusions on making a mini-language on HVM.
 
@@ -11,7 +12,7 @@ tags:
   - functional-programming
 ---
 
-In my [previous post](@/hop-hvm-mini-language-part-2.md), I walked through the first steps of making a simple compiler with [HVM]. Now I cover some final thoughts and conclusions.
+In my [previous post](./hop-hvm-mini-language-part-2), I walked through the first steps of making a simple compiler with [HVM]. Now I cover some final thoughts and conclusions.
 
 <!-- more -->
 

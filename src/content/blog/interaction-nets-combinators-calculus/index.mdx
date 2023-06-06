@@ -33,7 +33,7 @@ import reductionExample1Img from "./reduction-example1.excalidraw.png";
 import reductionExample2Img from "./reduction-example2.excalidraw.png";
 import reductionExample3Img from "./reduction-example3.excalidraw.png";
 
-I've recently [posted](@/hvm-what-is-functional-programming.md) about [HVM], a highly parallel, functional runtime with awesome potential, and, just maybe, the computing model of the future.
+I've recently [posted](./hvm-what-is-functional-programming) about [HVM], a highly parallel, functional runtime with awesome potential, and, just maybe, the computing model of the future.
 
 But what what _is_ HVM built on? From the readme we hear about things such as _Interaction Nets_ and _Lambda Calculus_, but it's hard to grasp what those are and how they relate to each-other without some investigation.
 
@@ -72,7 +72,7 @@ In the diagrams, each active port is indicated with an arrow going out from a no
 
 Substitution rules are applied when _two nodes' active ports are connected to each-other_. That's the only time we may define substitutions. If we don't have two active ports connected, no substitutions will happen.
 
-Here are the two rules we could use to implement the interaction between the `Append` node and the `Cons` and `Nil` nodes. This is essentially the same thing we did when we implemented `List.append` for HVM in my [previous post](@/hop-hvm-mini-language-part-2.md#appending-to-strings-and-lists).
+Here are the two rules we could use to implement the interaction between the `Append` node and the `Cons` and `Nil` nodes. This is essentially the same thing we did when we implemented `List.append` for HVM in my [previous post](./hop-hvm-mini-language-part-2.md#appending-to-strings-and-lists).
 
 #### Append to Cons Rule
 
