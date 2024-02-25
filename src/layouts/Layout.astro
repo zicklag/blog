@@ -25,6 +25,9 @@ const socialImageURL = new URL(
   ogImage ? ogImage : SITE.ogImage,
   Astro.url.origin
 ).href;
+
+// The base URL for relative links. Calculated without the trailing slash
+let relativeUrlBase = Astro.url.href.replace(/\/$/, "");
 ---
 
 <!DOCTYPE html>
@@ -32,6 +35,7 @@ const socialImageURL = new URL(
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+    <base href={relativeUrlBase} />
     <link
       rel="icon"
       type="image/svg+xml"
@@ -81,7 +85,6 @@ const socialImageURL = new URL(
   <script
     defer
     src="https://static.cloudflareinsights.com/beacon.min.js"
-    data-cf-beacon='{"token": "84db072b848a42d0b8dd9048bdf27fe5"}'
-  ></script>
+    data-cf-beacon='{"token": "84db072b848a42d0b8dd9048bdf27fe5"}'></script>
   <!-- End Cloudflare Web Analytics -->
 </html>
