@@ -16,6 +16,8 @@ In my [previous post](./hop-hvm-mini-language-part-2), I walked through the firs
 
 <!-- more -->
 
+> **Note:** You can find the entire code for HOP on GitHub [here](https://github.com/zicklag/hop).
+
 [HVM]: https://github.com/HigherOrderCO/HVM
 
 ## Automatic Multi-threading is Awesome

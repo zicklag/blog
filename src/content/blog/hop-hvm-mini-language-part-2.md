@@ -16,7 +16,7 @@ In my [previous post](./hop-hvm-mini-language-part-1), I walked through the basi
 
 <!-- more -->
 
-> **Note:** Unfortunately I ran out of time to walk through the whole compiler, so this goes over how we get started.
+> **Note:** You can find the entire code for HOP on GitHub [here](https://github.com/zicklag/hop).
 
 ## Goal Functionality
 
@@ -324,4 +324,4 @@ Unfortunately this post already turned out enormous! I wasn't expecting to do su
 
 If you are reading this and you want a finished tutorial, let me know by opening a [discussion](https://github.com/zicklag/blog/discussions/new?category=general).
 
-Finally, let's skip to my [Conclusion so far](./hop-hvm-mini-language-conclusion.md).
+Finally, let's skip to my [Conclusion so far](./hop-hvm-mini-language-conclusion).
