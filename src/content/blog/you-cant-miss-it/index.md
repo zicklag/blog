@@ -8,6 +8,7 @@ tags:
   - life
   - God
 featured: true
+draft: true
 ---
 
 Today I want to share some really good news: you can't go to Hell on accident.
