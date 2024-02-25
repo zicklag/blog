@@ -18,18 +18,23 @@ const { activeNav } = Astro.props;
   <div class="nav-container">
     <div class="top-nav-wrap">
       <a href={import.meta.env.BASE_URL} class="logo">
-        {
-          LOGO_IMAGE.enable ? (
-            <img
-              src={LOGO_IMAGE.svg ? logoSVG : logoPNG}
-              alt="AstroPaper Logo"
-              width={LOGO_IMAGE.width}
-              height={LOGO_IMAGE.height}
-            />
-          ) : (
-            SITE.title
-          )
-        }
+        <div class="logo--title">
+          {
+            LOGO_IMAGE.enable ? (
+              <img
+                src={LOGO_IMAGE.svg ? logoSVG : logoPNG}
+                alt="AstroPaper Logo"
+                width={LOGO_IMAGE.width}
+                height={LOGO_IMAGE.height}
+              />
+            ) : (
+              SITE.title
+            )
+          }
+        </div>
+        <div class="logo--description">
+          {SITE.desc}
+        </div>
       </a>
       <nav id="nav-menu">
         <button
@@ -138,7 +143,13 @@ const { activeNav } = Astro.props;
     @apply relative flex w-full items-start justify-between p-4 sm:items-center sm:py-8;
   }
   .logo {
-    @apply absolute py-1 text-xl font-semibold sm:text-2xl;
+    @apply py-1;
+  }
+  .logo--title {
+    @apply text-xl font-semibold sm:text-2xl mb-2;
+  }
+  .logo--description {
+    opacity: .7;
   }
   .hamburger-menu {
     @apply self-end p-2 sm:hidden;
