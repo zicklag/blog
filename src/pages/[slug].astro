@@ -1,24 +1,40 @@
 ---
-import { CollectionEntry, getCollection } from "astro:content";
-import PostDetails from "@layouts/PostDetails.astro";
-import slugify from "@utils/slugify";
+
+//
+// This page will redirect the initial posts from the site to
+// the `/blog/[slug]` page that we have moved it to.
+//
+
+import Layout from "@layouts/Layout.astro";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
 
 export interface Props {
-  post: CollectionEntry<"blog">;
+  slug: string;
 }
 
 export async function getStaticPaths() {
-  const posts = await getCollection("blog", ({ data }) => !data.draft);
-
-  const postResult = posts.map(post => ({
-    params: { slug: slugify(post.data) },
-    props: { post },
+  const postResult = [
+    "interaction-nets-combinators-calculus",
+    "hge-high-order-game-engine",
+    "hop-hvm-mini-language-conclusion",
+    "hop-hvm-mini-language-part-1",
+    "hop-hvm-mini-language-part-2",
+    "hvm-what-is-functional-programming",
+    "the-enemy-lies",
+    "welcome-to-my-blog",
+  ].map(slug => ({
+    params: { slug },
   }));
 
   return postResult;
 }
 
-const { post } = Astro.props;
+const { slug } = Astro.params;
+const new_url = `${import.meta.env.BASE_URL}blog/${slug}`;
 ---
 
-<PostDetails post={post} />
+<Layout redirect={new_url}>
+  <Header />
+  <Footer />
+</Layout>

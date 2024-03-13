@@ -28,7 +28,7 @@ const next = pageNum < totalPages ? "" : "disabled";
       {
         posts.map(({ data }) => (
           <Card
-            href={`${import.meta.env.BASE_URL}${slugify(data)}`}
+            href={`${import.meta.env.BASE_URL}blog/${slugify(data)}`}
             frontmatter={data}
           />
         ))
@@ -41,8 +41,8 @@ const next = pageNum < totalPages ? "" : "disabled";
       <nav class="pagination-wrapper" aria-label="Pagination">
         <LinkButton
           disabled={prev === "disabled"}
-          href={`${import.meta.env.BASE_URL}posts${
-            pageNum - 1 !== 1 ? "/" + (pageNum - 1) : ""
+          href={`${import.meta.env.BASE_URL}blog${
+            pageNum - 1 !== 1 ? "/page/" + (pageNum - 1) : ""
           }`}
           className={`mr-4 select-none ${prev}`}
           ariaLabel="Previous"
@@ -54,7 +54,7 @@ const next = pageNum < totalPages ? "" : "disabled";
         </LinkButton>
         <LinkButton
           disabled={next === "disabled"}
-          href={`${import.meta.env.BASE_URL}posts/${pageNum + 1}`}
+          href={`${import.meta.env.BASE_URL}blog/page/${pageNum + 1}`}
           className={`ml-4 select-none ${next}`}
           ariaLabel="Next"
         >
