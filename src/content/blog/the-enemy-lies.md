@@ -6,6 +6,8 @@ description: Thoughts on lies, pride, respect, loneliness, love, and the truth.
 featured: true
 tags:
   - life
+  - philosophy
+  - respect
 ---
 
 <p class="mx-[2%] px-[3%] py-4 rounded-sm border 2">This post is a reflection and also a long-form reply to a recent post, <a href="https://blog.erlend.sh/against-loneliness"><em>Against Loneliness</em></a>, by Erlend Sogge Heggen whom I've had the pleasure of collaborating with online. To keep it from getting lost forever on Discord, and to share with any other travelers who may wander here, I am publishing it on my blog.</p>
