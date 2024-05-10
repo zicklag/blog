@@ -5,9 +5,7 @@ postSlug: hvm-what-is-functional-programming
 pubDatetime: 2023-03-15 14:18:00
 description: |
   HVM, the High Order Virtual Machine, is a new, blazing fast runtime for functional programming languages that seems to have some pretty incredible potential for the future.
-
-featured: true
-
+featured: false
 tags:
   - hvm
   - functional-programming
