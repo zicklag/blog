@@ -1,9 +1,9 @@
 ---
 author: Zicklag
 title: The Reach of Respect
-pubDatetime: 2024-04-19 20:45:00
+pubDatetime: 2024-05-10 10:00:00
 description: >
-  Thoughts on who deserves respect, and where to draw the line.
+  Why do we respect people, and where do you draw the line?
 featured: true
 postSlug: the-reach-of-respect
 tags:
