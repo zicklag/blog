@@ -3,7 +3,7 @@ author: Zicklag
 title: The Reach of Respect
 pubDatetime: 2024-05-10 10:00:00
 description: >
-  Why do we respect people, and where to draw the line?
+  Why do we respect people? Where should we draw the line?
 featured: true
 postSlug: the-reach-of-respect
 tags:
