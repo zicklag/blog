@@ -10,6 +10,7 @@ tags:
   - hvm
   - hge
   - functional-programming
+  - technology
 ---
 
 In my [previous post](./hop-hvm-mini-language-part-1), I walked through the basics of an HVM program that could read and write files. Now we're going to make a compiler!

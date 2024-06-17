@@ -9,6 +9,7 @@ featured: false
 tags:
   - hvm
   - functional-programming
+  - technology
 ---
 
 [HVM], the High Order Virtual Machine, is a new, blazing fast runtime for functional programming languages that seems to have some pretty incredible potential for the future.

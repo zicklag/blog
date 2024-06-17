@@ -10,6 +10,7 @@ tags:
   - hvm
   - hge
   - functional-programming
+  - technology
 ---
 
 In my [previous post](./hge-high-order-game-engine), I talked about why I want to use [HVM] to make a game engine. I decided that, for now, I was going to try to get along writing a thin language on top of raw HVM code, to make it a little bit easier to write and maintain.

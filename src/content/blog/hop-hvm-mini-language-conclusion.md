@@ -10,6 +10,7 @@ tags:
   - hvm
   - hge
   - functional-programming
+  - technology
 ---
 
 In my [previous post](./hop-hvm-mini-language-part-2), I walked through the first steps of making a simple compiler with [HVM]. Now I cover some final thoughts and conclusions.

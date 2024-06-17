@@ -7,6 +7,7 @@ pubDatetime: 2023-03-15 18:07:00
 tags:
   - hvm
   - hge
+  - technology
 ---
 
 In the [last post](./hvm-what-is-functional-programming) I eluded towards making a game engine, utilizing functional programming and the new [HVM] runtime.
