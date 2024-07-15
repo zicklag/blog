@@ -1,9 +1,10 @@
 # Ignore everything
 /*
+/public/.well-known
 
 # Except these files & folders
 !/src
-!/public
+!/public/
 !/.github
 !tsconfig.json
 !astro.config.mjs
