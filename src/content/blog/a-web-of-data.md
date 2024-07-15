@@ -3,7 +3,7 @@ author: Zicklag
 title: A Web of Data
 pubDatetime: 2024-07-15 14:00:00
 description: >
-  Architecture ideas for a web of data.
+  Thoughts on making a "Web of Data" instead of a "Web of Pages", and how that might let us take a step away from the dominance of large, complicated browsers.
 postSlug: a-web-of-data
 tags:
   - technology
