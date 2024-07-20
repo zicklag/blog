@@ -463,5 +463,11 @@ Join the Commune [Discord Server][Discord] or our bridged [Matrix Space][Matrix]
 
 </div>
 
+---
+
+> **Update ( 07/20/2024 ):** Since this post there's been new ideas on how to model data on top of
+> Iroh, see the next post, [A Web of Data](./a-web-of-data) for an overview of the high-level
+> concepts.
+
 [Discord]: https://discord.gg/3v5xjDAk
 [Matrix]: https://matrix.to/#/#home:commune.sh

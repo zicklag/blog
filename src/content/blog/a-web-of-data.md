@@ -129,3 +129,9 @@ ping me on the Fediverse: `@zicklag@mastodon.social`.
 [Matrix]: https://matrix.to/#/#discord:commune.sh
 [GitHub]: https://github.com/commune-os/weird/discussions
 [IPFS]: https://ipfs.tech/
+
+---
+
+> **Update ( 07/20/2024 ):** Since this post we've started a [draft
+> specification](https://github.com/commune-os/agentic-fediverse/blob/57b29888ef00b8d6ef4979b4b6d83899be6f097e/leaf-protocol-draft.md)
+> for a data model on top of the [WillowProtocol](https://willowprotocol.org).
