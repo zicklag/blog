@@ -133,5 +133,5 @@ ping me on the Fediverse: `@zicklag@mastodon.social`.
 ---
 
 > **Update ( 07/20/2024 ):** Since this post we've started a [draft
-> specification](https://github.com/commune-os/agentic-fediverse/blob/57b29888ef00b8d6ef4979b4b6d83899be6f097e/leaf-protocol-draft.md)
+> specification](https://github.com/commune-os/agentic-fediverse/blob/main/leaf-protocol-draft.md)
 > for a data model on top of the [WillowProtocol](https://willowprotocol.org).
