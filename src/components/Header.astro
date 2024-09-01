@@ -3,8 +3,8 @@ import { LOGO_IMAGE, SITE } from "@config";
 import Hr from "./Hr.astro";
 import LinkButton from "./LinkButton.astro";
 
-import logoPNG from "/assets/logo.png";
-import logoSVG from "/assets/logo.svg";
+import logoPNG from "/assets/logo.png?raw";
+import logoSVG from "/assets/logo.svg?raw";
 
 export interface Props {
   activeNav?: "posts" | "tags" | "about" | "search";
@@ -146,10 +146,10 @@ const { activeNav } = Astro.props;
     @apply py-1;
   }
   .logo--title {
-    @apply text-xl font-semibold sm:text-2xl mb-2;
+    @apply mb-2 text-xl font-semibold sm:text-2xl;
   }
   .logo--description {
-    opacity: .7;
+    opacity: 0.7;
   }
   .hamburger-menu {
     @apply self-end p-2 sm:hidden;

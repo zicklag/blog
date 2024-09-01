@@ -30,6 +30,7 @@ export default function Card({ href, frontmatter, secHeading = true }: Props) {
         {frontmatter.tags
           .map(tag => (
             <a
+              key={tag}
               href={`${import.meta.env.BASE_URL}tags/${tag}`}
               className="mx-2 underline-offset-4 hover:underline"
             >
