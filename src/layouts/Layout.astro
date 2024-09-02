@@ -50,7 +50,7 @@ let relativeUrlBase = Astro.url.href.replace(/\/$/, "");
       rel="alternate"
       type="application/rss+xml"
       title="RSS Feed - Zicklag's Blog"
-      href=`${canonicalURL}rss.xml`
+      href=`${canonicalURL.protocol}//${canonicalURL.host}/rss.xml`
     />
     <meta name="generator" content={Astro.generator} />
 
