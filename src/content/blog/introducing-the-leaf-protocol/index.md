@@ -51,7 +51,7 @@ Furthermore, if the protocol completely fails for whatever reason, we will conti
 necessary to make Weird without it. It exists only to serve those benefited by it.
 
 That said, we designed Leaf to be flexible, and useful outside of Weird. We hope that we'll be able
-to make bridges between leaf and other protocols, possibly even using it as an integration layer
+to make bridges between Leaf and other protocols, possibly even using it as an integration layer
 between different protocols. If we can make Leaf work well for us while still integrating with the
 wider protocol ecosystem, that would be awesome.
 
@@ -123,16 +123,17 @@ etc. The specification and the data format are then hashed to create a globally 
 ID**.
 
 By breaking entity data up into individual components, different apps are able to incrementally
-understand different entities.
+understand entities.
 
-For example, you might have an entity for your public profile, and an entity for a blog post of
-yours. Your profile and your blob post would both have `Name`, `Description`, and `Image`
-components. They also might have components the other doesn't, like `Friends` and `Article`.
+For example, you might have one entity for your public profile, and another entity for a blog post.
+Your profile and your blob post would both have `Name`, `Description`, and `Image` components. They
+also might have components the other doesn't, like `Friends` and `Article`.
 
 Because each component means something by itself, an app can read whatever components it
-understands, and simply ignore the ones that it doesn't.
+understands, and simply ignore the ones that it doesn't. This can be really useful for
+interoperability.
 
-If I share a link to my profile or my blog post, a chat app can read the `Name`, `Description`, and
+If I share a link to my profile or my blog post in a chat app, the app can read the `Name`, `Description`, and
 `Image` components to generate a link preview, without having to know anything else about the
 entity. It doesn't care if it's a blog post or a profile, or a picture in my photo album. They all
 have components that it understands well enough to show a link preview.
@@ -150,7 +151,7 @@ servers or DNS or anything else.
 
 That said, we don't want to _force_ users to do this. We want you to be able to sign up with your
 Email address, just like you do with any other app, and start using Weird right away. Cryptographic
-keys allow you to do this, too, by simply storing the keypair on the server.
+keys allow us to do this, too, by simply storing the keypair on the server.
 
 Since we're using keypairs, though, we have to think about what happens if somebody loses a keypair,
 or if it gets stolen.
@@ -180,17 +181,28 @@ our existing solutions may break our trust in some form or another. Our goal, th
 user the freedom to tell the machine what _their_ idea of identity is, for the times when trust in
 the machine identity is broken.
 
+Note that we still continue to use DNS as a way to discover other identities. For example, I have a
+`zicklag@weird.one` account that can be used to discover my profile. The `weird.one` server is also
+capable of changing the keypair associated to the name `zicklag` on that server.
+
+**But** somebody who has added me as a friend or who has followed me, will have my old keypair in
+their contact book, and their app can tell them that the identity associated to `zicklag@weird.one`
+has changed. At that point they can choose to trust the new identity, or they can reach out to me
+however they wish and ask if that's a change that I initiated or if somebody else grabbed my
+username after I stopped paying for my account or something like that.
+
 ### Permissions
 
 Permissions to access data in Leaf is handled completely by the Willow Protocol's [Meadowcap]
 capability system. We don't have to change anything there!
 
-The capability system allows an identity to give out read/write access to portions of their data
-store. This can be used by the Weird server to create a token that allows read/write access for a
-user's desktop/mobile/web application offline.
+The capability system allows you to grant read/write access to portions of your data store. This can
+be used by the Weird server to create a capability that allows read/write access for a user's
+desktop/mobile/web application offline. It could also be used to allow another server read-only
+access to your data as a backup.
 
-These capabilities can be either permanent, or they can have expiration times so that they are
-temporary. Permanent capabilities are irrevocable.
+These capabilities can be either permanent, or they can have expiration times. Permanent
+capabilities are irrevocable, so expirations can be used for an extra level of security.
 
 [Meadowcap]: https://willowprotocol.org/specs/meadowcap/index.html
 
@@ -199,25 +211,25 @@ temporary. Permanent capabilities are irrevocable.
 ### Leaf RPC Server
 
 Just recently we finished the first working prototype of Leaf, and started using it as Weird's data
-store. Weird is written in TypeScript with SvelteKit, though, and our Leaf implementation is written
+store. Weird is written in TypeScript with SvelteKit, and our Leaf implementation is written
 in Rust.
 
-To bridge the gap, we made a simple Leaf RPC Server that can be connected to over WebSockets. Our
+To bridge the language gap, we made a simple Leaf RPC Server that can be connected to over WebSockets. Our
 TypeScript server can then connect to the Leaf RPC server, similar to how other apps would connect
-to a PostgreSQL server.
+to a PostgreSQL database.
 
 Our latest service architecture now looks like this:
 
 ![service architecture diagram](./services.png)
 
-### The State of Authentication
+### Authentication
 
-Notice that we use [Rauthy] as our auth server and OIDC provider, so that people can, for instance,
-log into a community git server with their Weird account.
+Weird uses [Rauthy] as its auth server and OIDC provider, so that people can, for instance, log into
+a community git server with their Weird account.
 
-Currently there is only one Leaf "identity" and that is the server's identity. The server is the
-owner of all of the user profile data. Eventually users will be able to give the Weird server a
-"capability" that they've issued with their own identity, allowing them to keep control over their
+As it stands we only create one Leaf keypair for the server identity. The server is the owner of all
+of the user profile data. Eventually, though, users will be able to give the Weird server a
+capability that they've issued with their own identity, allowing them to keep control over their
 identity, or even delegate it to another server, while still being able to use the Weird service to
 store, edit, and serve their data.
 
@@ -226,36 +238,36 @@ store, edit, and serve their data.
 ### Interoperability
 
 Because of the Entity-Component data model, it is possible for other Weird instances to federate
-with the main Weird.one instance, while also storing new data, custom to the instance.
+with the main Weird.one instance, while also storing new, custom data.
 
-For example, somebody could make an alternate Weird instance that is customized specifically as a
-freelancing site. This would mean creating new components that would be used to store data related
-to available gigs, etc. The cool part, though, is that your profile on the freelancing site would
-still be compatible with Weird.one because the standardized components such as `Name`,
-`Description`, etc. are still shared between them.
+For example, somebody could make an alternate Weird instance that is customized as a freelancing
+site. This would mean creating new components that would be used to store data related to available
+gigs, etc. The cool part, though, is that your profile on the freelancing site would still be
+compatible with Weird.one because the standardized components such as `Name`, `Description`,
+`Username`, etc. are still shared between them.
 
 This can extend to totally different kinds of applications, too, such as personal or communal note
-taking tools, etc.
+taking apps, recipe sharing sites, etc.
 
 ### Work-in-Progress
 
-The currently deployed prototype is still very work-in-progress. It doesn't follow the draft
-specification perfectly, and the specification itself needs more work as well.
+Weird and Leaf are both still very work-in-progress. Our Leaf implementation doesn't follow the
+draft specification perfectly, and the specification itself needs more work as well.
 
 We are also waiting for the Rust Willow implementation we are using, [Iroh], to finish getting
 up-to-date with the Willow spec. Currently we are faking some pieces of Willow on top of Iroh, and
-the capability system isn't working yet, so all data is necessarily public.
+the capability system isn't working yet, so, for now, all data is 100% public.
 
-We've also got a lot of things to figure out, regarding how we are going to organize data on Leaf.
-It's a lot different than a traditional database!
+We also have a lot of things to figure out still, regarding how we are going to organize data on
+Leaf. It's a lot different than a traditional database!
 
 [Iroh]: https://www.iroh.computer/
 
 ### Summary
 
-In summary, there is a lot of work still to do, but things are going very well! Migrating Weird to
+Overall, there is a lot of work still to do, but things are going very well! Migrating Weird to
 use the Leaf RPC server has drastically simplified our previous design, and is making it much easier
-to add new kinds of data as the app develops.
+to add new kinds of data as the app evolves.
 
 Leaf is a big experiment, but I'm excited to see how it will turn out, and to continue learning how
-to make federated software that brings real value to people.
+to make federated software that can provide real-world value.
