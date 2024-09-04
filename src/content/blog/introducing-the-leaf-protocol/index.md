@@ -21,9 +21,7 @@ rationale behind the experimental Leaf Protocol that has been developed for the 
 ### Further Reading / Context
 
 This builds on previous thoughts and developments touched on in my [How to
-Federate?](./how-to-federate) and [Web of Data](./a-web-of-data) posts. You may also want to check
-out the [Agentic Fediverse][af] vision page, which has an outline of some of the tenets we are
-trying to uphold with Weird and Leaf.
+Federate?](./how-to-federate) and [Web of Data](./a-web-of-data) posts.
 
 I'll touch on some of the points in those posts briefly here, so they aren't required reading, but
 will help to give more context.
@@ -34,6 +32,15 @@ technical details.
 [Weird.one]: https://weird.one
 [af]: https://github.com/muni-town/agentic-fediverse?tab=readme-ov-file#agentic-fediverse
 [ls]: https://github.com/muni-town/agentic-fediverse/blob/main/leaf-protocol-draft.md#leaf-protocol-draft
+
+## The Vision
+
+The vision for Leaf is to empower an [Agentic Fediverse][af]. We want to enable things like:
+
+- A social network where **you** own your data, contacts, and identity
+- A local first CMS that can sync to cloud services or your friends over LAN
+- Village-scale community networks that can be hosted by the community
+- A network of **people** that can connect to other **people**
 
 ## Another Protocol?
 
