@@ -1,7 +1,7 @@
 ---
 author: Zicklag
 title: Introducing The Leaf Protocol
-pubDatetime: 2024-09-01 18:00:00
+pubDatetime: 2024-09-03 12:01:00
 description: >
   An overview of the experimental Leaf Protocol for federated, local-first app development.
 postSlug: introducing-leaf-protocol
