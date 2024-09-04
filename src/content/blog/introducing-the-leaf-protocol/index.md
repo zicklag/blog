@@ -16,7 +16,7 @@ tags:
 
 Over the last several months I've been working on creating a federated, offline-capable, data
 backend for the [Weird.one] app. This post sums up the latest developments and goes into the
-rational behind the experimental Leaf Protocol that has been developed for the use-case.
+rationale behind the experimental Leaf Protocol that has been developed for the use-case.
 
 ### Further Reading / Context
 
@@ -126,7 +126,7 @@ By breaking entity data up into individual components, different apps are able t
 understand entities.
 
 For example, you might have one entity for your public profile, and another entity for a blog post.
-Your profile and your blob post would both have `Name`, `Description`, and `Image` components. They
+Your profile and your blog post would both have `Name`, `Description`, and `Image` components. They
 also might have components the other doesn't, like `Friends` and `Article`.
 
 Because each component means something by itself, an app can read whatever components it
