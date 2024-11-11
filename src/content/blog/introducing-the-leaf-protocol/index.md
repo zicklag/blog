@@ -45,7 +45,7 @@ The vision for Leaf is to empower an [Agentic Fediverse][af]. We want to enable 
 ## Another Protocol?
 
 Before going further I want to address an inevitable thought: "why are you making _another_
-protocol!? We've already got ActivityPub, AtProto, Nostr, RDF, IPNS, etc. etc."
+protocol!? We've already got ActivityPub, AtProto, Nostr, RDF, IPFS, etc. etc."
 
 The first reason is that we have priorities for Weird, specifically being local-first and supporting
 seamless data migration, that are different than most other protocols. Our goal **above all else**
