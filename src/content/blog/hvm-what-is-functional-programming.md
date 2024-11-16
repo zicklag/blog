@@ -81,7 +81,7 @@ Because each function is dependent only on its inputs, there's not a big, mutabl
 
 First off, a disclaimer, **I'm not really trying to find out which one is better!** Everybody has their own preferences, and everything has its pros and cons. What I really want to know is: "Are there compelling reasons to use a functional programming language for writing some of _my_ software?"
 
-The thing about functional programming languages is that they don't natively map well do our processors and memory, which inherently are like big state machines. So part of the reason they haven't caught on is because they aren't always as efficient to run. Substitutions don't map to clearly determined, time bounded instructions.
+The thing about functional programming languages is that they don't natively map well to our processors and memory, which inherently are like big state machines. So part of the reason they haven't caught on is because they aren't always as efficient to run. Substitutions don't map to clearly determined, time bounded instructions.
 
 That's what HVM's major innovation was: it implemented a way to efficiently execute functional languages. So if we say, for the sake of argument, that performance _isn't_ a problem, is functional programming "better"?
 
