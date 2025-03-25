@@ -2,6 +2,7 @@
 import { SITE } from "@config";
 import "@styles/base.css";
 import "@fontsource/ibm-plex-mono";
+import CharlieQuoteComponent from "@components/charlie-quote.html";
 
 const googleSiteVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION;
 
@@ -93,6 +94,8 @@ let relativeUrlBase = Astro.url.href.replace(/\/$/, "");
 
     <script is:inline src={`${import.meta.env.BASE_URL}toggle-theme.js`}
     ></script>
+
+    <CharlieQuoteComponent />
   </head>
   <body>
     <slot />

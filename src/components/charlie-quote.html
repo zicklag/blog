@@ -1,0 +1,69 @@
+<!-- Define a custom component for charley, my co-host on some blog posts. -->
+<script>
+  customElements.define(
+    "charlie-quote",
+    class extends HTMLElement {
+      constructor() {
+        super();
+
+        /** @type {HTMLTemplateElement} */
+        const template = document.getElementById(
+          "charlie-quote-template"
+        );
+        const templateContent = template.content;
+
+        this.attachShadow({ mode: "open" }).appendChild(
+          templateContent.cloneNode(true)
+        );
+      }
+    }
+  );
+</script>
+
+<template id="charlie-quote-template">
+  <style>
+    .top {
+      margin-right: 1em;
+      margin-bottom: 2em;
+    }
+
+    .title {
+      color: white;
+      margin-bottom: 0.5em;
+    }
+
+    div.block {
+      display: flex;
+      gap: 1em;
+    }
+
+    quoteblock {
+      color: white;
+      border: 1px solid white;
+      background-color: hsla(0, 0%, 100%, 0.05);
+      padding: 0.5em;
+      border-radius: 0.5em;
+      display: block;
+      font-size: 0.95em;
+    }
+
+    img.charlie {
+      width: 3em;
+    }
+
+    div.title {
+      font-weight: bold;
+    }
+  </style>
+  <div class="top">
+    <div class="title">Charlie</div>
+    <div class="block">
+      <img class="charlie" src="/charlie.svg" />
+      <div>
+        <quoteblock>
+          <slot></slot>
+        </quoteblock>
+      </div>
+    </div>
+  </div>
+</template>
