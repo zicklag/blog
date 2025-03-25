@@ -58,5 +58,12 @@
     "!(*.{png,jpg,jpeg,webp,excalidraw})": [
       "prettier --plugin-search-dir=. --write"
     ]
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@swc/core",
+      "esbuild",
+      "sharp"
+    ]
   }
 }
