@@ -15,8 +15,8 @@ tags:
 
 A while ago me and my brothers played this great old Super NES game called _Breath of Fire II_. I'm
 sorry, but this post is going to spoil one of the most interesting story elements in the game
-because that's want to talk about. Feel free to go beat the game and then come back later. It's been
-a while since I played it so forgive me if some of the details are a little off.
+because that's I want to talk about. Feel free to go beat the game and then come back later. It's
+been a while since I played it so forgive me if some of the details are a little off.
 
 Anyway, right at the beginning of the game, you're playing as a boy, and you can walk around and
 talk to your dad and your sister, and other people in town. After you start exploring a little you
