@@ -145,7 +145,7 @@ If I share a link to my profile or my blog post in a chat app, the app can read 
 entity. It doesn't care if it's a blog post or a profile, or a picture in my photo album. They all
 have components that it understands well enough to show a link preview.
 
-> **Note:** You can get more background on this concept in my [Web of Data](./web-of-data) post.
+> **Note:** You can get more background on this concept in my [A Web of Data](./a-web-of-data) post.
 
 ### Identity
 
